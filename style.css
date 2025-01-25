@@ -1,0 +1,310 @@
+
+/* NavBar Section */
+
+* {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+    border: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(233, 236, 240);
+}
+
+.navbar {
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo img{
+    background-image: url('MyATS.logo.png');
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: normal;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+}
+
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* LinkedIn logo size */
+.linkedinlogo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-search {
+    height: 80px;
+    width: 520px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    height: 45px;
+    width: 70%;
+    
+}
+
+.search-icon i {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: rgb(213, 171, 238);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: white;
+    border-color: solid white;
+}
+
+.search-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 20%;
+    height: 40px;
+}
+
+.panel-options p{
+  display: inline;
+  margin-left: 15px;
+  width: 30%;
+  font-size: 0.90rem;
+  font-size: large;
+  font-style: italic;
+  font-weight: 700;
+ 
+}
+
+.panel-options p a{
+    color: white;
+    text-decoration: none;
+}
+
+.panel-options p a:hover{
+    cursor: progress;
+    color: yellow;
+}
+  
+/* NavBar Section */
+
+
+
+
+/* Main Section */
+
+
+.main{
+     background-color: #f4f7fa;
+     padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns layout */
+    gap: 30px;
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .box-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 40px;
+    color: #4CAF50;  /* Green for fresh and clean look */
+    margin-right: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Unique hover effect */
+  .box:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background-color: #e8f5e9;
+  }
+  
+  /* Make boxes responsive */
+  @media (max-width: 768px) {
+    .dashboard {
+      grid-template-columns: 1fr; /* 1 column layout on smaller screens */
+    }
+  }
+
+  
+/* Main Section */
+
+
+
+/* Footer Section */
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1 1 25%;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-section form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .footer-section input {
+    padding: 8px;
+    width: 75%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .footer-section button {
+    padding: 8px 16px;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .footer-section button:hover {
+    background-color: #005bb5;
+  }
+  
+  .footer-section .social-media ul {
+    display: flex;
+    padding: 0;
+  }
+  
+  .footer-section .social-media ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-section .social-media ul li a {
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .footer-section .social-media ul li a:hover {
+    color: #0073e6;
+  }
+  
+  .footer-section .copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-section {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-section {
+      flex: 1 1 100%;
+      margin-bottom: 15px;
+    }
+  
+    .footer-section form {
+      flex-direction: column;
+    }
+  
+    .footer-section input {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .footer-section button {
+      width: 100%;
+    }
+  }
+
+  /* Footer Section */

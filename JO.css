@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1100px;
+}
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-weight: bold;
+}
+.form-group input, .form-group select, .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group.inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.form-group.inline input, .form-group.inline select {
+    width: 48%;  /* Each field takes up 48% of the space */
+}
+.form-group textarea {
+    width: 100%;
+}
+.form-group button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #0056b3;
+}
+.remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: none;
+}
+.add-btn {
+    background-color: #2ecc71;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: none;
+}

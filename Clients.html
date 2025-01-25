@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Details Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background for the full page */
+        }
+
+        header {
+            background-color: #0078D7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+        }
+
+        footer {
+            background-color: #0078D7;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 140px); /* Remaining height excluding header and footer */
+            padding: 20px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .sky-blue {
+            background-color: #E3F2FD;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #005BB5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Client Details Form
+</header>
+
+<form>
+    <div class="form-container">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" name="companyName">
+            </div>
+            <div class="form-group">
+                <label for="industry">Industry</label>
+                <input type="text" id="industry" name="industry">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="companySize">Company Size</label>
+                <input type="text" id="companySize" name="companySize">
+            </div>
+            <div class="form-group">
+                <label for="headquarter">Headquarter</label>
+                <input type="text" id="headquarter" name="headquarter">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="website">Company Website</label>
+                <input type="text" id="website" name="website">
+            </div>
+            <div class="form-group">
+                <label for="linkedin">Services</label>
+                <select id="usingServices" name="usingServices">
+                    <option value="Recruitment">Recruitment</option>
+                    <option value="RPO">RPO</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="Company Linkdin">Company LinkedIn</label>
+                <input type="text" id="Company Linkdin" name="Company Linkdin">
+            </div>
+            <div class="form-group">
+                <label for="Spoc">Spoc Lindkin</label>
+                <input type="text" id="Spoc" name="Spoc">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="mail">Mail</label>
+                <input type="email" id="mail" name="mail">
+            </div>
+
+            <div class="form-group">
+                <label for="Contact">Contact</label>
+                <input type="Number" id="COntact" name="Contact">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="billingTerms">Billing Terms</label>
+                <input type="text" id="billingTerms" name="billingTerms">
+            </div>
+            <div class="form-group">
+                <label for="paymentCycles">Payment Cycles</label>
+                <input type="text" id="paymentCycles" name="paymentCycles">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="agreementStart">Agreement Start Date</label>
+                <input type="date" id="agreementStart" name="agreementStart">
+            </div>
+            <div class="form-group">
+                <label for="agreementEnd">Agreement End Date</label>
+                <input type="date" id="agreementEnd" name="agreementEnd">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="feedback">Client Feedback</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="opportunities">Future Opportunities</label>
+                <textarea id="opportunities" name="opportunities" rows="4"></textarea>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+
+</body>
+</html>

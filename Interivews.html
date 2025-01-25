@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+    .form-container {
+      max-width: 100%;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+    }
+    .form-header {
+      text-align: center;
+      background-color: #6200ea;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+      margin: -30px -30px 20px -30px;
+    }
+    .form-header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+    .form-group {
+      flex: 1;
+      min-width: 48%;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #6200ea;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #4500b8;
+    }
+    @media (max-width: 768px) {
+      .form-group {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-header">
+      <h1>Interview Form</h1>
+    </div>
+    <form action="/submit-interview" method="post" enctype="multipart/form-data">
+      <!-- Row 1: Client Name and Candidate Name -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="client-name">Client Name:</label>
+          <input type="text" id="client-name" name="client-name" required>
+        </div>
+        <div class="form-group">
+          <label for="candidate-name">Candidate Name:</label>
+          <input type="text" id="candidate-name" name="candidate-name" required>
+        </div>
+      </div>
+
+      <!-- Row 2: Contact and Email ID -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="contact">Contact Number:</label>
+          <input type="tel" id="contact" name="contact" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email ID:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <!-- Row 3: Position and Notice Period -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="position">Position:</label>
+          <input type="text" id="position" name="position" required>
+        </div>
+        <div class="form-group">
+          <label for="notice-period">Notice Period:</label>
+          <input type="text" id="notice-period" name="notice-period" required>
+        </div>
+      </div>
+
+      <!-- Row 4: Date and Time -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="interview-date">Interview Date:</label>
+          <input type="date" id="interview-date" name="interview-date" required>
+        </div>
+        <div class="form-group">
+          <label for="interview-time">Interview Time:</label>
+          <input type="time" id="interview-time" name="interview-time" required>
+        </div>
+      </div>
+
+      <!-- Row 5: Mode and Interview Round -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="mode">Mode of Interview:</label>
+          <select id="mode" name="mode" required>
+            <option value="in-person">In-Person</option>
+            <option value="virtual">Virtual</option>
+            <option value="telephonic">Telephonic</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="interview-round">Interview Round:</label>
+          <select id="interview-round" name="interview-round" required>
+            <option value="round-1">Round 1</option>
+            <option value="round-2">Round 2</option>
+            <option value="final-round">Final Round</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Row 6: Recruiter Name and File Attachment -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="recruiter-name">Recruiter Name:</label>
+          <input type="text" id="recruiter-name" name="recruiter-name" required>
+        </div>
+        <div class="form-group">
+          <label for="resume">File Attachment (Resume):</label>
+          <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
